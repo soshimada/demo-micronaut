@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  web:
+    image: client-service
+    build:
+      context: ./
+      Dockerfile:
+    ports:
+      -8080:8080
+    enviromment:
+      -DATABASE_HOST=host.docker.internal
+      -DATABASE_USER=postgres
+      -DATABASE_PASSWORD=paula@123
+      -DATABASE_NAME=demo
+      -DATABASE_PORT=5432

@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: projetoKotlin
+
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:postgresql://localhost:5432/demo`}
+    username: postgres
+    password: paula@123
+    driverClassName: org.postgresql.Driver
+---
+jpa:
+  default:
+    packages-to-scan:
+      - 'com.example.model'
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+        format_sql: true

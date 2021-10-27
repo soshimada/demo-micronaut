@@ -1,0 +1,5 @@
+com.example.services.$UsuarioService$Definition$Reference
+com.example.controller.$UserController$Definition$Reference
+com.example.repository.$UsuarioRepository$Intercepted$Definition$Reference
+com.example.exception.$UsuarioExceptionHandler$Definition$Reference
+com.example.services.$UsuarioService$Definition$Intercepted$Definition$Reference
